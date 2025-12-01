@@ -106,19 +106,76 @@ section .infos{
     width:100vw;
     position: fixed;
     top:0;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(0, 0, 0, 0.74);
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(5.2px);
     display: flex;
     justify-content: center;
     align-items: center;
     
+    
 }
 .modal h2{
     font-size: 50px;
-    margin-bottom: var(--space-md);
 }
 
 .modal .start-game{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.btn{
+    padding: var(--space-sm);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.btn:hover{
+    background-color: #0f0f0f;
+    color: #e6e6e6;
+    transform: scale(1.1);
+}
+
+.modal2{
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    top:0;
+    background: rgba(0, 0, 0, 0.74);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    display: none;
+    
+}
+
+.modal2 h2{
+    font-size: 50px;
+    color: 	white;
+    margin-bottom: 20px;
+}
+
+.modal2 h3{
+    font-size: large;
+    margin-bottom: 20px;
+    
+}
+
+.end-game{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
 }
