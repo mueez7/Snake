@@ -12,6 +12,8 @@ body{
 :root{
     /* Background Colors */
     --bg--primary-color: #0c0c0c;
+    --bg--fill-color: #fafdf4;
+    --bg--food-color: #ff0000;
 
 
 
@@ -86,6 +88,37 @@ section .infos{
     /* width: 30px;
     height: 30px; */
     border: 1px solid var(--border-primary-color);
+    font-size: 10px;
     
   
+}
+
+.fill{
+    background-color: var(--bg--fill-color);
+}
+
+.food{
+    background-color: var(--bg--food-color);
+}
+
+.modal{
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    top:0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal h2{
+    font-size: 50px;
+    margin-bottom: var(--space-md);
+}
+
+.modal .start-game{
+    text-align: center;
 }
